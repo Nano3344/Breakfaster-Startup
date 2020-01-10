@@ -1,0 +1,298 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@font-face {
+  src: url("./fonts/Raleway.ttf");
+  font-family: Raleway;
+}
+section {
+  display: flex;
+  min-height: 100vh;
+}
+.background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #00E676;
+  z-index: 0;
+}
+.image-background {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+}
+header {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: Raleway;
+  padding: 35px 100px 0px;
+  z-index: 1;
+  animation: 2s fadeIn 0s forwards;
+}
+header h2 {
+  font-family: Raleway;
+  font-weight: bolder;
+  font-size: 20;
+  color: #212121;
+}
+header nav {
+  display: flex;
+}
+header nav a {
+  text-decoration: none;
+  color: #212121;
+  padding: 20px;
+  font-weight: bolder;
+}
+header nav a:hover {
+  color: white;
+  transition: 0.5s;
+}
+#Home {
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: Raleway;
+  z-index: 1;
+}
+#Home img {
+  width: 300px;
+  z-index: 1;
+  margin-bottom: 20px;
+  animation: 2s fadeIn 0s forwards;
+}
+#Home h2 {
+  font-weight: bold;
+  font-size: 40px;
+  color: white;
+  margin-bottom: 20px;
+  z-index: 1;
+  animation: 2s fadeIn 0s forwards;
+}
+#Home h4 {
+  z-index: 1;
+  color: white;
+  animation: 2s fadeIn 0s forwards;
+}
+#Home a {
+  margin-top: 40px;
+  text-decoration: none;
+  color: white;
+  border-radius: 4px;
+  border: 2px solid #212121;
+  background-color: #212121;
+  padding: 10px 20px;
+  font-weight: bolder;
+  z-index: 1;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/* Produkte */
+
+#Produkt {
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#Produkt .heading-wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 20vh;
+}
+#Produkt .heading {
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  font-family: Raleway;
+  font-weight: bold;
+  font-size: 25px;
+  border-bottom: 2px solid #66BB6A;
+}
+#Produkt .main-content {
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#Produkt .container {
+  width: 800px;
+  height: 380px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 60px;
+}
+#Produkt .container img {
+  width: 400px;
+  padding: 40px;
+}
+#Produkt .container p {
+  padding: 40px;
+  font-family: sans-serif;
+}
+/* Über uns */
+
+#Uns {
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #F5F5F5;
+}
+#Uns .heading-wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 20vh;
+}
+#Uns .heading {
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  font-family: Raleway;
+  font-weight: bold;
+  font-size: 25px;
+  border-bottom: 2px solid #66BB6A;
+}
+#Uns .main-content {
+  display: flex;
+  width: 80%;
+  height: 80vh;
+  justify-content: space-between;
+  flex-direction: row;
+}
+#Uns .profile-wrapper {
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 20px;
+  width: 200px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 4px;
+}
+#Uns .profile-wrapper p {
+  font-family: sans-serif;
+  font-size: 13px;
+  margin-top: 10px;
+  opacity: 1;
+  transition: 0.5s;
+}
+#Uns .profile-wrapper h2{
+  text-align: center;
+  font-size: 15px;
+  color: #212121;
+  font-family: Raleway;
+  font-weight: bolder;
+}
+#Uns .profile-wrapper img{
+  border-radius: 50%;
+}
+#Uns .profile-wrapper img:hover p {
+  transition: 0.5s;
+  opacity: 1;
+}
+
+/* Abonnements */
+
+#Abos {
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#Abos .heading-wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 20vh;
+}
+#Abos .heading {
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  font-family: Raleway;
+  font-weight: bold;
+  font-size: 25px;
+  border-bottom: 2px solid #66BB6A;
+}
+#Abos .main-content {
+  width: 70%;
+  height: 80vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  font-family: Raleway;
+}
+#Abos .main-content hr {
+  height: 1px;
+  width: 70%;
+}
+#Abos .main-content .basis-abo{
+ width: 350px;
+ height: 400px;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ flex-direction: column;
+ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+ margin-bottom: 40px;
+}
+#Abos .basis-abo .price:hover {
+  cursor: pointer;
+}
+#Abos .main-content h2 {
+  color: #66BB6A;
+  margin-bottom: 20px;
+}
+#Abos .main-content h4:not(.price) {
+  padding: 20px;
+}
+#Abos .main-content .price {
+  color: white;
+  padding: 12px 22px;
+  background-color: #66BB6A;
+  border-radius: 3px;
+  margin-top: 20px;
+}
+#Abos .main-content .spezial-abo {
+  width: 350px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 40px;
+}
+#Abos .spezial-abo .price:hover {
+  cursor: pointer;
+}
